@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["UP017", "B905"]  # zip() of a list with its own shifted copy is intentionally unequal

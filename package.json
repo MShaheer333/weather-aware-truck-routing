@@ -1,0 +1,14 @@
+{
+  "name": "weather-aware-truck-routing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root scripts to run the Django backend and React frontend together.",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "node scripts/run-backend.mjs test",
+    "test:frontend": "npm --prefix frontend test",
+    "build": "npm --prefix frontend run build"
+  }
+}
